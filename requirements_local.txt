@@ -1,0 +1,8 @@
+# PRECAUTION: avoid production dependencies that aren't in development
+
+-r ./requirements.txt
+
+Faker==8.2.0
+python-dateutil==2.8.1
+six==1.16.0
+text-unidecode==1.3

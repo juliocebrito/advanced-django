@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block tittle%} Books {% endblock %}
+
+{% block content %}
+
+<h1>Create Author</h1>
+
+<form action="/books/create_author" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+
+{% endblock %}

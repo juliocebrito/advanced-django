@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block tittle%} Polls {% endblock %}
+
+{% block content %}
+
+<h1>Create Example</h1>
+<form action="/polls/create_example_model" method="post">
+    {% csrf_token %}
+    <label for="name">name: </label>
+    <input id="name" type="text" name="name" value>
+    <input type="submit" value="Submit">
+</form><br>
+
+<form action="/polls/create_example_model" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+
+{% endblock %}
