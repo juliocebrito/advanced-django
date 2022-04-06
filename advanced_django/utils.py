@@ -9,8 +9,8 @@ class BaseModel(models.Model):
     This acts as an abstract base class from which every
     other model in the project will inherit. This class provides
     every table with the following attributes:
-        + created (DateTime): Store the datetime the object was created.
-        + updated (DateTime): Store the last datetime the object was updated.
+        + created_at (DateTime): Store the datetime the object was created.
+        + updated_at (DateTime): Store the last datetime the object was updated.
         + created_by (ForeignKey): Store the user relationship which the object was created.
         + updated_by (ForeignKey): Store the user relationship which the object was updated.
         + state (BooleanField): Store the Main object state.

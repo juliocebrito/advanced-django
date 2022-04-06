@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import include, path
 from advanced_django import views
 
+# import ipdb; ipdb.set_trace()
+
 admin.site.site_header = 'Advance Django administration'
 admin.site.site_title = 'Advance Django administration'
 admin.site.index_title = 'Welcome to Advance Django site administration'
@@ -27,4 +29,5 @@ urlpatterns = [
     path('books/', include('books.urls')),
     path('blog/', include('blog.urls')),
     path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
