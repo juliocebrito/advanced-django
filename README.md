@@ -26,6 +26,7 @@ For Educational Purposes Only
 ## Polls
 ## Books
 ## Blog
+## Users
 
 ---
 
@@ -111,6 +112,7 @@ https://docs.djangoproject.com/en/4.0/topics/http/urls/
 ---
 
 # Auth
+* users
 https://docs.djangoproject.com/en/4.0/topics/auth/default/#using-the-views-1
 
 ---
