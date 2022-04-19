@@ -49,7 +49,7 @@ class Question(BaseModel):
 
     @property
     def full_info(self):
-        "Returns the question's dull info"
+        "Returns the question's full info"
         return 'id:{}, {}, {}'.format(self.id, self.question_text,
                                       self.pub_date.strftime("%m/%d/%Y, %H:%M:%S"))
 
@@ -61,8 +61,8 @@ class Choice(BaseModel):
         ('1', 'One'),
     )
     question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='choices')
-    choice_text = models.CharField(max_length=200, choices=CHOICE_TEXT_CHOICES)#max_length=1
-    votes = models.IntegerField(default=0) #editable=False
+    choice_text = models.CharField(max_length=1, choices=CHOICE_TEXT_CHOICES) # max_length=1
+    votes = models.IntegerField(default=0, editable=False) # editable=False
 
     class Meta(BaseModel.Meta):
         verbose_name = 'choice'

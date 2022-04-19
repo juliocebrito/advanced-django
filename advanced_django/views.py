@@ -1,9 +1,11 @@
 import re
 from django.shortcuts import render
 from django.http import HttpRequest, HttpResponse
+from django.contrib.auth.decorators import login_required
 from datetime import datetime
 from django.core.mail import send_mail
 
+# @login_required
 def index(request):
     # import ipdb; ipdb.set_trace()
     # print(request.GET)
@@ -28,7 +30,7 @@ def file_manipulation():
       now = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
       file = open('temp/test_file.txt', 'w')
       file.write('Django Advanced! Current server time is: {now}'.format(now=now))
-      file.close()
-      return file
   except OSError as err:
       print("Error: {0}".format(err))
+  finally:
+      file.close()

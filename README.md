@@ -90,6 +90,8 @@ https://docs.djangoproject.com/en/4.0/topics/db/queries/
 
 # Advance Views
 * Class-based views
+https://docs.djangoproject.com/en/4.0/ref/class-based-views/
+https://ccbv.co.uk/
 
 ---
 
@@ -98,6 +100,10 @@ https://docs.djangoproject.com/en/4.0/topics/db/queries/
 ---
 
 # Advanced Forms
+* forms
+https://docs.djangoproject.com/en/4.0/topics/forms/
+https://docs.djangoproject.com/en/4.0/ref/forms/api/
+
 * Formsets
 https://docs.djangoproject.com/en/4.0/topics/forms/formsets/
 
