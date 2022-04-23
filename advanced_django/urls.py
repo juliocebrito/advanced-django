@@ -24,10 +24,11 @@ admin.site.site_title = 'Advance Django administration'
 admin.site.index_title = 'Welcome to Advance Django site administration'
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    # path('', views.index, name='index'),
+    path('', include('users.urls')),
     path('polls/', include('polls.urls')),
     path('books/', include('books.urls')),
     path('blog/', include('blog.urls')),
     path('admin/', admin.site.urls),
-    path('accounts/', include('django.contrib.auth.urls')),
+    # path('accounts/', include('django.contrib.auth.urls')),
 ]

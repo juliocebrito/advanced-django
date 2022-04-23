@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block tilte %}Signin{% endblock tilte %}
+
+{% block content %}
+<form method="POST" action="{% url 'users:signin' %}" class="">{% csrf_token %}
+  <div class="form-group">
+    {{ form.as_p}}
+    <div>
+      <button type="submit">Signin</button>
+    </div>
+  </div>
+</form>
+{% endblock content %}

@@ -1,8 +1,11 @@
 # Advance Django
 For Educational Purposes Only
+https://docs.djangoproject.com/en/4.0/ref/
+https://docs.djangoproject.com/en/4.0/topics/
 
 ## dependecies
 * python 3
+* Django 4.0+
 * sqlite
 * postgres (optional)
 * docker (optional)
@@ -91,8 +94,9 @@ https://docs.djangoproject.com/en/4.0/topics/db/queries/
 # Advance Views
 * Class-based views
 https://docs.djangoproject.com/en/4.0/ref/class-based-views/
-https://ccbv.co.uk/
 
+## MRO (Method Resolution Order)
+https://ccbv.co.uk/
 ---
 
 # Advance Templates
@@ -119,6 +123,7 @@ https://docs.djangoproject.com/en/4.0/topics/http/urls/
 
 # Auth
 * users
+https://docs.djangoproject.com/en/4.0/topics/auth/
 https://docs.djangoproject.com/en/4.0/topics/auth/default/#using-the-views-1
 
 ---

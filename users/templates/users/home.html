@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+
+{% block content %}
+<div>
+  <h1>Welcome</h1>
+  <p>This is a aplication Web for Educational Purposes Only</p>
+  <hr>
+</div>
+<a href="{% url 'users:login' %}">Login</a>
+<a href="{% url 'users:signin' %}">Signin</a>
+</div>
+{% endblock content %}
