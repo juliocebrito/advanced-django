@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block tilte_modal %}Create Question{% endblock tilte_modal %}
+
+{% block content %}
+<p>question_text : {{ object.question_text }}</p>
+<p>pub_date : {{ object.pub_date }}</p>
+<p>count_choices : {{ object.count_choices }}</p>
+{% endblock content  %}

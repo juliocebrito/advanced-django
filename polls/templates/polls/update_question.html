@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block tilte_modal %} Update Question{% endblock tilte_modal %}
+
+{% block content %}
+<form method="POST" action="{% url 'polls:update_question'  object.pk %}" class="">{% csrf_token %}
+  <div>
+    {{ form.as_p }}
+  </div>
+  <div>
+    <button type="submit">Update</button>
+  </div>
+</form>
+{% endblock content  %}

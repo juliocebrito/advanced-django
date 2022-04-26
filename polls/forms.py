@@ -14,4 +14,8 @@ class QuestionForm(ModelForm):
     class Meta:
         model = Question
         fields = '__all__'
-        exclude = ('count_choices',) 
+        exclude = ('count_choices',)
+
+
+class ChoiceForm(ModelForm):
+    pass 

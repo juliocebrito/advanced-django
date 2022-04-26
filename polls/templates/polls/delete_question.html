@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block tilte_modal %} Delete Question{% endblock tilte_modal %}
+
+{% block content %}
+<form method="POST" action="{% url 'polls:delete_question'  object.pk %}" class="">{% csrf_token %}
+  <div>
+    <p>Estas seguro que quiers borrar "{{ object }}"?</p>
+    <input type="submit" value="Delete" class="btn btn-default" role="button"/>
+  </div>
+
+</form>
+{% endblock content  %}

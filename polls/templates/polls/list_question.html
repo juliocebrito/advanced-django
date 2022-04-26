@@ -4,7 +4,9 @@
 
 {% block content %}
 
-<h1>Questions</h1>
+<h1>Questions: {{ qty }}</h1>
+<p>yes: {{ yes }}</p>
+<p>no: {{ no }}</p>
 <ul>
 {% for object in object_list %}
     <li>{{ object }}</li>
