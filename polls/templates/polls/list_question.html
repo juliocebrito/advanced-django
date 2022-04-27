@@ -5,8 +5,6 @@
 {% block content %}
 
 <h1>Questions: {{ qty }}</h1>
-<p>yes: {{ yes }}</p>
-<p>no: {{ no }}</p>
 <ul>
 <a href="{% url 'polls:create_question' %}">CREATE</a> 
 {% for object in object_list %}

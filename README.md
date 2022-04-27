@@ -25,41 +25,41 @@ https://docs.djangoproject.com/en/4.0/topics/
 
 ---
 
-# Apps
-## Polls
-## Books
-## Blog
-## Users
+## Apps
+### Polls
+### Books
+### Blog
+### Users
 
 ---
 
-# Subjects:
-## Django Architecture
+## Subjects:
+### Django Architecture
 
-## MTV VS MVC
+### MTV VS MVC
 
-## Django Request-Response Cycle 
+### Django Request-Response Cycle 
 
-## Request and response objects
-https://docs.djangoproject.com/en/4.0/ref/request-response/
+### Request and response objects
+* https://docs.djangoproject.com/en/4.0/ref/request-response/
 
-## settings
+### settings
 
-## requirements
+### requirements
 
-## libs
+### libs
 
 ---
 
-# Advanced Models
+## Advanced Models
 https://docs.djangoproject.com/en/4.0/topics/db/models/
 
-## Fields
+### Fields
 * blank
 * null
 * help_text
 
-## Ralationships
+### Ralationships
 * Many-to-one relationships
 * Many-to-many relationships
 * Extra fields on many-to-many relationships
@@ -68,11 +68,11 @@ https://docs.djangoproject.com/en/4.0/topics/db/models/
 ## Validators
 https://docs.djangoproject.com/en/4.0/ref/validators/
 
-## Meta
+### Meta
 * abstrac
 * proxy
 
-## Migrations
+### Migrations
 https://docs.djangoproject.com/en/4.0/topics/migrations/
 
 * python manage.py makemigrations
@@ -86,24 +86,24 @@ https://docs.djangoproject.com/en/4.0/topics/migrations/
 * python manage.py showmigrations
 * python manage.py sqlmigrate app 0000
 
-## ORM (Object-relational mapper)
+### ORM (Object-relational mapper)
 https://docs.djangoproject.com/en/4.0/topics/db/queries/
 
 ---
 
-# Advance Views
+## Advance Views
 * Class-based views
 https://docs.djangoproject.com/en/4.0/ref/class-based-views/
 
-## MRO (Method Resolution Order)
+### MRO (Method Resolution Order)
 https://ccbv.co.uk/
 ---
 
-# Advance Templates
+## Advance Templates
 
 ---
 
-# Advanced Forms
+## Advanced Forms
 * forms
 https://docs.djangoproject.com/en/4.0/topics/forms/
 https://docs.djangoproject.com/en/4.0/ref/forms/api/
@@ -113,22 +113,22 @@ https://docs.djangoproject.com/en/4.0/topics/forms/formsets/
 
 ---
 
-# Advanced URLs
+## Advanced URLs
 https://docs.djangoproject.com/en/4.0/topics/http/urls/
 
-# Advance Admin
+## Advance Admin
 * Actions
 
 ---
 
-# Auth
+## Auth
 * users
 https://docs.djangoproject.com/en/4.0/topics/auth/
 https://docs.djangoproject.com/en/4.0/topics/auth/default/#using-the-views-1
 
 ---
 
-# Common web application tools
+## Common web application tools
 * Caching
 * Logging
 * Sending emails
@@ -143,7 +143,7 @@ https://docs.djangoproject.com/en/4.0/topics/auth/default/#using-the-views-1
 
 ---
 
-# Other core functionalities
+## Other core functionalities 
 * Conditional content processing
 * Content types and generic relations
 * Flatpages

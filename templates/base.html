@@ -9,9 +9,12 @@
 <body>
     {% if user.is_authenticated %}
         <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
+        <a href="{% url 'users:home' %}">HOME</a>
         <a href="{% url 'users:logout' %}">Logout</a>
     {% else %}
         <p>Welcome, new user. Please log in.</p>
+        <a href="{% url 'users:login' %}">Login</a>
+        <a href="{% url 'users:signin' %}">Signin</a>
     {% endif %}
     {% block content %}
     {% endblock %}
