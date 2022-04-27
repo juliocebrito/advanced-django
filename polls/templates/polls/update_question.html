@@ -8,6 +8,7 @@
   </div>
   <div>
     <button type="submit">Update</button>
+    <a href="{% url 'polls:detail_question' object.pk %}">Cancel</a>
   </div>
 </form>
 {% endblock content  %}

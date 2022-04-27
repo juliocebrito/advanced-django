@@ -5,4 +5,7 @@
 <p>question_text : {{ object.question_text }}</p>
 <p>pub_date : {{ object.pub_date }}</p>
 <p>count_choices : {{ object.count_choices }}</p>
+<a href="{% url 'polls:update_question' object.pk%}">UPDATE</a>
+<a href="{% url 'polls:delete_question' object.pk%}">DELETE</a>
+<a href="{% url 'polls:list_question' %}">LIST</a>
 {% endblock content  %}

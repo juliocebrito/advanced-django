@@ -6,6 +6,7 @@
   <div>
     <p>Estas seguro que quiers borrar "{{ object }}"?</p>
     <input type="submit" value="Delete" class="btn btn-default" role="button"/>
+    <a href="{% url 'polls:detail_question' object.pk %}">Cancel</a>
   </div>
 
 </form>
